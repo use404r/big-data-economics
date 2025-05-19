@@ -1,0 +1,21 @@
+@charset "UTF-8";
+
+@import 'reset';
+@import 'variables';
+@import 'fonts';
+@import 'mixins';
+@import 'core';
+
+@import 'blocks/header.scss';
+@import 'blocks/about.scss';
+@import 'blocks/path.scss';
+@import 'blocks/programm.scss';
+@import 'blocks/structure.scss';
+@import 'blocks/whom.scss';
+@import 'blocks/advanatges.scss';
+@import 'blocks/format.scss';
+@import 'blocks/grant.scss';
+@import 'blocks/credit.scss';
+@import 'blocks/contacts.scss';
+@import 'blocks/footer.scss';
+@import 'blocks/burger.scss';

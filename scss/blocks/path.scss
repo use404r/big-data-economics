@@ -1,0 +1,143 @@
+.path {
+  padding: 3.75rem 0 2.875rem 0;
+  background: url(#{$base-url}/assets/img/intro-background.png) no-repeat;
+  background-size: 30vw auto;
+  background-position: right center;
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    gap: 1.375rem;
+     max-width: 46.75rem;
+
+
+    &-title,
+     &-title-span {
+    font-family: "Arkhip", sans-serif;
+      color: $black;
+      font-weight: 400;
+      line-height: 120%;
+      font-size: 2.5rem;
+    }
+
+    &-title-span {
+      color: $sky-blue;
+    }
+
+    &-list {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1.875rem;
+    }
+
+    &-item {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+      width: 100%;
+
+        h3 {
+          line-height: 150%;
+          color: $black;
+          font-size: 1.25rem;
+          font-weight: 700;
+        }
+  
+        p {
+          font-weight: 700;
+          font-family: "Roboto", sans-serif;
+          font-size: 2.5rem;
+          color: $sky-blue;
+        }
+      }
+  }
+
+  
+}
+
+@media (max-width: 1024px) {
+  .path {
+  padding: 3.625rem 0;
+  background: url(#{$base-url}/assets/img/intro-background.png) no-repeat;
+  background-size: 30vw auto;
+  background-position: right center;
+
+
+
+
+  &__container {
+    gap: 1.313rem;
+     max-width: 35.375rem;
+
+
+    &-title,
+     &-title-span {
+      font-size: 2rem;
+    }
+
+    &-title-span {
+      color: $sky-blue;
+    }
+
+    &-list {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 4.063rem;
+    }
+
+    &-item {
+
+        h3 {
+          font-size: 0.938rem;
+        }
+  
+        p {
+          font-size: 2rem;
+        }
+      }
+  }
+}
+
+}
+
+@media (max-width: 460px) {
+  .path {
+  padding: 1.563rem 0 1.75rem 0;
+  background: none;
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    gap: 0.813rem;
+    max-width: 100%;
+
+
+    &-title,
+     &-title-span {
+      font-size: 1.5rem;
+      text-align: center;
+    }
+
+    &-list {
+      display: flex;
+     flex-direction: column;
+      gap: 1.875rem;
+      align-items: center;
+    }
+
+    &-item {
+
+        h3 {
+          font-size: 0.938rem;
+          text-align: center;
+        }
+  
+        p {
+          font-size: 2rem;
+          text-align: center;
+        }
+      }
+  } 
+}
+}
+

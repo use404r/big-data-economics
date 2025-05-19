@@ -1,0 +1,176 @@
+.whom {
+  padding: 6.25rem 0 3.75rem 0;
+  background: url(#{$base-url}/assets/img/whom-background.png) no-repeat;
+  background-size: cover;
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+
+    h2 {
+      font-family: "Arkhip", sans-serif;
+      font-size: 3rem;
+      text-align: center;
+      color: $white;
+    }
+  }
+
+  &__list-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+  }
+
+  &__list {
+    &-primary {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 3.438rem;
+    }
+
+    &-item {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      gap: 2rem;
+
+      &-img {
+        height: 11.75rem;
+
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+    }
+
+    &-text {
+      display: flex;
+      flex-direction: column;
+      gap: 0.625rem;
+      font-family: "Roboto", sans-serif;
+
+      h3 {
+        font-size: 1.5rem;
+        line-height: 140%;
+        font-weight: 700;
+        text-align: center;
+      }
+
+      p {
+        line-height: 150%;
+        text-align: center;
+        font-size: 1rem;
+      }
+    }
+
+    &-secondary {
+      display: flex;
+      flex-direction: row;
+      gap: 3.75rem;
+
+      &-item {
+        width: 50%;
+
+        &:last-child {
+          width: 75%;
+        }
+      }
+
+      &-img {
+        height: 11.75rem;
+
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+    }
+  }
+
+  @media (max-width: 1024px) {
+    background: url(#{$base-url}/assets/img/whom-background-tablet.png) no-repeat;
+    background-size: cover;
+
+    &__container {
+      gap: 3.063rem;
+
+      h2 {
+        font-size: 2rem;
+      }
+    }
+
+    &__list-container {
+      gap: 1.5rem;
+    }
+
+    &__list {
+      &-primary {
+        gap: 1.75rem;
+      }
+
+      &-item {
+        gap: 1.25rem;
+      }
+
+      &-text {
+        h3 {
+          font-size: 1.5rem;
+        }
+
+        p {
+          font-size: 0.938rem;
+        }
+      }
+
+      &-secondary {
+        gap: 1.75rem;
+      }
+    }
+  }
+
+  @media (max-width: 460px) {
+    padding: 2.75rem 0 2.375rem 0;
+    background: url(#{$base-url}/assets/img/whom-background-mobile.png) no-repeat;
+    background-size: cover;
+
+    &__container {
+      gap: 2.75rem;
+
+      h2 {
+        font-size: 1.5rem;
+      }
+    }
+
+    &__list-container {
+      gap: 1.75rem;
+    }
+
+    &__list {
+      display: flex;
+      flex-direction: column;
+      gap: 1.75rem;
+
+      &-primary {
+        gap: 1.75rem;
+      }
+
+      &-item {
+        gap: 1.25rem;
+      }
+      &-secondary {
+        &-item {
+          width: 100%;
+          
+          &:last-child {
+            width: 100%;
+          }
+        }
+      }
+    }
+
+  }
+}

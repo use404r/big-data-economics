@@ -1,0 +1,147 @@
+.grant {
+  padding: 3.813rem 0 5.938rem 0;
+   background: url(#{$base-url}/assets/img/student-grant.png) no-repeat;
+    background-size: 31vw auto;
+    background-position: right 3.606rem center;
+  
+   
+  
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    gap: 2.625rem;
+    width: 41.625rem;
+    padding-top: 1.75rem;
+
+    &-text {
+      display: flex;
+      flex-direction: column;
+      gap: 1.125rem;
+
+      h2 {
+        font-size: 3rem;
+        color: $dark-jungle-green;
+
+      }
+
+      p {
+        color: $dark-jungle-green;
+        font-size: 1.5rem;
+        font-weight: 600;
+      }
+
+      &-span {
+        font-weight: 700;
+        font-size: 2rem;
+        color: $sky-blue;
+      }
+    }
+
+    &-btn {
+      @include btn($sky-blue, $white, 2.25rem, 0.531rem, 11.406rem, 0.931rem, 11.406rem, 0.938rem);
+      width: 92%;
+      font-family:  "Gilroy", sans-serif;
+      font-weight: 600;
+      text-underline-offset: 0.5rem;
+      text-decoration: underline;
+
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+
+  .grant {
+  padding: 4.75rem 0 4.375rem 0;
+   background: url(#{$base-url}/assets/img/student-grant.png) no-repeat;
+    background-size: 33vw auto;
+    background-position: right 4rem center;
+  
+   
+  
+
+  &__container {
+    gap: 2.188rem;
+    width: 31rem;
+    padding-top: 0;
+
+    &-text {
+      gap: 1.625rem;
+
+      h2 {
+        font-size: 2.25rem;
+
+      }
+
+      p {
+        font-size: 1.25rem;
+        font-weight: 400;
+      }
+
+      &-span {
+        font-size: 1.25rem;
+      }
+    }
+
+    &-btn {
+      @include btn($sky-blue, $white, 1.5rem, 0.813rem, 8.375rem, 1.2rem, 8.375rem, 6.25rem);
+      width: 92%;
+      font-family:  "Gilroy", sans-serif;
+      font-weight: 600;
+      text-underline-offset: 0.5rem;
+      text-decoration: underline;
+
+    }
+  }
+}
+
+}
+
+@media (max-width: 460px) {
+
+  .grant {
+  padding: 1.938rem 0 16rem 0;
+   background: url(#{$base-url}/assets/img/student-grant.png) no-repeat;
+    background-size: 70vw auto;
+    background-position: bottom 1.313rem center;
+  
+   
+  
+
+  &__container {
+    gap: 1rem;
+    width: 100%;
+
+    &-text {
+      padding: 0 1.438rem;
+      gap: 1rem;
+
+      h2 {
+        font-size: 1.5rem;
+
+      }
+
+      p {
+        font-size: 0.938rem;
+        
+      }
+
+      &-span {
+        font-size: 0.938rem;
+      }
+    }
+
+    &-btn {
+      @include btn($sky-blue, $white, 1.25rem, 0.906rem, 4.5rem, 1.1rem, 4.5rem, 6.25rem);
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+       text-underline-offset: 0.3rem;
+
+    }
+  }
+}
+
+}

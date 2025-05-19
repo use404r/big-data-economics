@@ -1,0 +1,129 @@
+body {
+  font-family: 'TT Travels', sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 90%
+}
+
+.container { 
+  @include min-max(320px, 100%); 
+}
+
+
+.wrap {
+  @include min-max(320px, 1440px);
+  width: 100%;
+  padding: 0 10.75rem;
+  box-sizing: border-box;
+}
+
+.about-wrap {
+  @include min-max(320px, 1440px);
+  width: 100%;
+  padding: 0 8.188rem;
+  box-sizing: border-box;
+}
+
+.whom-wrap {
+  padding: 0 11.917rem;
+}
+
+.contacts-wrap {
+  padding: 0 8.917rem;
+}
+
+
+
+
+
+body, 
+html {
+  overflow-x: hidden;
+}
+
+h1,
+h2,
+h3 {
+  font-weight: 700;
+  color: $white;
+}
+
+h2 {
+  font-family: "Arkhip", sans-serif;
+  font-weight: 400;
+  color: $white;
+}
+
+p, 
+span,
+a {
+  color: $white;
+}
+
+a {
+  text-decoration: none;
+ 
+}
+
+section {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start; 
+}
+
+@media (max-width: 1200px) {
+  html {
+    font-size: 80%;
+  }
+}
+
+@media (max-width: 1024px) {
+  html {
+    font-size: 70%;
+  }
+
+  .wrap {
+  padding: 0 6.188rem;
+}
+
+.about-wrap {
+  padding: 0 2.438rem;
+}
+}
+
+@media (max-width: 820px) {
+  html {
+    font-size: 50%;
+  }
+}
+
+@media (max-width: 580px) {
+  html {
+    font-size: 40%;
+  }
+}
+
+@media (max-width: 460px) {
+  html {
+    font-size: 100%;
+  }
+
+  .wrap {
+  padding: 0 2.875rem;
+}
+
+.about-wrap {
+  padding: 0 1.688rem;
+}
+} 
+
+@media (max-width: 380px) {
+
+  html {
+    font-size: 80%;
+  }
+
+}
+

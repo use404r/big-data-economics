@@ -1,0 +1,34 @@
+.footer {
+  padding: 3.75rem 0 2.875rem 0;
+
+  p {
+    font-weight: 300;
+    font-size: 1.25rem;
+    color: $black;
+    text-align: center;
+  }
+}
+
+@media (max-width: 1024px) {
+
+  .footer {
+  padding: 3.063rem 0 2.563rem 0;
+
+  p {
+    font-size: 0.875rem;
+  }
+}
+
+}
+
+@media (max-width: 460px) {
+
+  .footer {
+  padding: 2.25rem 0 1.563rem 0;
+
+  p {
+    font-size: 0.75rem;
+  }
+}
+
+}

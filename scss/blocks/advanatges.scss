@@ -1,0 +1,105 @@
+.advantages {
+  padding: 3.75rem 0 5.063rem 0;
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    gap: 3.75rem;
+
+    h2 {
+      text-align: center;
+      font-size: 3rem;
+      color: $black;
+    }
+
+    &-list {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 3rem;
+
+      &-item {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+         align-items: center;  
+
+        img {
+          display: inline-block;
+          width: 3.5rem;
+          height: auto;
+        }
+
+        p {
+          font-size: 1.875rem;
+          font-weight: 600;
+          color: $black;
+          line-height: 130%;
+          text-align: center;
+        }
+      }
+
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .advantages {
+  padding: 2.813rem 0 3.75rem 0;
+
+  &__container {
+
+    h2 {
+      font-size: 2rem;
+    }
+
+    &-list {
+
+      &-item {
+
+        img {
+          width: 2.75rem;
+        }
+
+        p {
+          font-size: 1.25rem;
+        }
+      }
+
+    }
+  }
+}
+
+}
+
+@media (max-width: 460px) {
+  .advantages {
+  padding: 2.813rem 0 2.594rem 0;
+
+  &__container {
+
+    h2 {
+      font-size: 1.5rem;
+    }
+
+    &-list {
+      display: flex;
+      flex-direction: column;
+      gap: 3rem;
+
+      &-item {
+        gap: 1.5rem;
+
+        img {
+          width: 2.063rem;
+        }
+
+        p {
+          font-size: 1rem;
+        }
+      }
+
+    }
+  }
+}
+
+}

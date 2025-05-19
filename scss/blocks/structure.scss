@@ -1,0 +1,160 @@
+.structure {
+  padding: 3.75rem 0;
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    gap: 3.063rem;
+
+    &-text {
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+
+      h2 {
+        font-family: "Arkhip", sans-serif;
+        line-height: 120%;
+        text-align: center;
+        font-size: 3rem;
+        color: $black;
+      }
+
+      p {
+        font-size: 1.25rem;
+        line-height: 150%;
+text-align: center;
+color: $black;
+padding: 0 3.75rem;
+      }
+    }
+
+    &-list {
+      display: flex;
+      flex-direction: column;
+      gap: 1.938rem;
+    }
+
+    &-item {
+      padding: 0.938rem 2.438rem;
+      background: linear-gradient(to bottom right, $cyan-blue, $royal-blue);
+      border-radius: 1.563rem;
+      display: flex;
+      flex-direction: column;
+      gap: 0.313rem;
+
+      &:nth-child(2) {
+        padding: 0.938rem 0.3rem;
+      }
+
+      h3 {
+        text-align: center;
+        font-weight: 700;
+        font-size: 2rem;
+        line-height: 130%;
+        color: $white;
+      }
+
+      p {
+        font-weight: 500;
+        font-size: 1.5rem;
+        line-height: 150%;
+        text-align: center;
+        color: $white;
+      }
+    }
+  }
+
+
+}
+
+@media (max-width: 1024px) {
+
+  .structure {
+  padding: 2.625rem 0 2.875rem 0;
+
+  &__container {
+    gap: 2.688rem;
+
+    &-text {
+      gap: 1.5rem;
+
+      h2 {
+        font-size: 2rem;
+      }
+
+      p {
+        font-size: 1rem;
+      }
+    }
+
+    &-list {
+      gap: 1.5rem;
+    }
+
+    &-item {
+      padding: 1.094rem 1.125rem;
+
+      &:nth-child(2) {
+         padding: 1.094rem 1.125rem;
+      }
+
+      h3 {
+        font-size: 1.5rem;
+      }
+
+      p {
+        font-size: 1.25rem;
+      }
+    }
+  }
+
+
+}
+
+}
+
+@media (max-width: 460px) {
+    .structure {
+  padding: 2.375rem 0;
+
+  &__container {
+    gap: 1.5rem;
+
+    &-text {
+
+      h2 {
+        font-size: 1.5rem;
+      }
+
+      p {
+        font-size: 0.813rem;
+        padding: 0;
+      }
+    }
+
+    &-list {
+      gap: 1.5rem;
+    }
+
+    &-item {
+      padding: 0.344rem 1.5rem;
+
+      &:nth-child(2) {
+         padding: 0.344rem 1.5rem;
+      }
+
+      h3 {
+        font-size: 1.25rem;
+      }
+
+      p {
+        font-size: 0.875rem;
+      }
+    }
+  }
+
+
+}
+
+}
+
