@@ -388,6 +388,7 @@ section {
   border-radius: 5.063rem;
   font-size: 2.5rem;
   width: fit-content;
+  cursor: pointer;
 }
 .about__container-text span {
   font-family: "Roboto", sans-serif;
