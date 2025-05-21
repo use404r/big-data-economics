@@ -356,7 +356,7 @@ section {
   }
 }
 .about {
-  padding: 8.188rem 0 7rem 0;
+  padding: 12.688rem 0 7rem 0;
   background: url(/big-data-economics/assets/img/about-background.png) no-repeat;
   background-size: cover;
   background-position: right;
@@ -408,7 +408,7 @@ section {
 
 @media (max-width: 1024px) {
   .about {
-    padding: 5.188rem 0;
+    padding: 9.688rem 0;
     background: url(/big-data-economics/assets/img/about-background-tablet.png) no-repeat;
     background-size: cover;
     background-position: right;
@@ -442,7 +442,7 @@ section {
 }
 @media (max-width: 460px) {
   .about {
-    padding: 2.063rem 0 1.813rem 0;
+    padding: 8.25rem 0 1.813rem 0;
     background: url(/big-data-economics/assets/img/about-background-mobile.png) no-repeat;
     background-size: cover;
     background-position: right;
@@ -454,7 +454,7 @@ section {
   }
   .about__container-title {
     font-size: 1.5rem;
-    padding-left: 1.188rem;
+    padding: 0 1.188rem;
     margin-bottom: 0;
   }
   .about__container-text {
