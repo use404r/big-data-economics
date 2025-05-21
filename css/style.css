@@ -1217,6 +1217,7 @@ section {
   text-underline-offset: 0.5rem;
   text-decoration: underline;
   color: #000000;
+  z-index: 1000;
 }
 
 @media (max-width: 1024px) {
